@@ -33,7 +33,7 @@ public class CategoryDAOTest extends BaseDAOTest{
 	@Test
 	public void testCreateCategory() {
 		
-		Category newCat = new Category("Health");
+		Category newCat = new Category("Java Core");
 		Category category = categoryDAO.create(newCat);
 		
 		assertTrue(category != null && category.getCategoryId() > 0);
@@ -84,5 +84,21 @@ public class CategoryDAOTest extends BaseDAOTest{
 		assertEquals(4, totalCategories);
 	}
 
-
+	@Test
+	public void testFindByName() {
+	    String name = "Java Core";
+	    Category category = categoryDAO.findByName(name);
+	    
+	    // Add an assert message to provide more context if the test fails
+	    assertNotNull("Category with name '" + name + "' should not be null", category);
+	}
+	
+	@Test
+	public void testFindByNameNotFound() {
+	    String name = "Ruby";
+	    Category category = categoryDAO.findByName(name);
+	    
+	    // Add an assert message to provide more context if the test fails
+	    assertNull("Category with name '" + name + "' should not be null", category);
+	}
 }

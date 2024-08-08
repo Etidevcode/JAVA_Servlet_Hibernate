@@ -8,18 +8,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <title>Manage Categories - Evergreen Bookstore Administration</title>
+<link rel="stylesheet" href="../css/style.css" >
+<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
 </head>
 <body>
 	<jsp:directive.include file="header.jsp" />
 	
 	<div align="center">
-		<h2>Category Management</h2>
+		<h2 class="pageheading">Category Management</h2>
 		<h3><a href="category_form.jsp">Create New Category</a></h3>
 	</div>
 	
 	<c:if test="${message != null}">
 	<div align="center">
-		<h4>${message}</h4>
+		<h4 class="message">${message}</h4>
 	</div>
 	</c:if>
 	
@@ -60,5 +63,6 @@
 			});
 		});	
 	</script>
+	
 </body>
 </html>
