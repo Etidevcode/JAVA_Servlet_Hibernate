@@ -23,3 +23,12 @@ Création d'un Site Web de librairie fonctionnelle de code avec servlet Java et 
 ![categories](images_project/category_management.png)
 
 ![categories](images_project/edit_category.png)
+
+# Authentification pour l'administrateur
+![books](images_project/admin_logint.png)
+
+# Gestion des livres - Implémenter la fonctionnalité Lister les livres
+![books](images_project/book_management.png)
+
+# Gestion des livres - Implémenter la fonctionnalité Créer des livres
+![books](images_project/book_create_management.png)
